@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Scroll with Flexbox</title>
+  <style>
+    .parent {
+      display: flex;
+      overflow-x: auto; /* Enables horizontal scrolling */
+      white-space: nowrap; /* Prevents line break for child elements */
+      width: 100%; /* Adjust width as needed */
+    }
+
+    .child {
+      display: flex; /* Ensures children also use Flexbox */
+      flex: 0 0 auto; /* Prevents the child divs from shrinking */
+      min-width: 150px; /* Adjust the width as needed */
+      margin: 10px; /* Adds space around child divs */
+      align-items: center; /* Centers content vertically */
+      justify-content: center; /* Centers content horizontally */
+      background-color: #f0f0f0; /* Background color for visibility */
+      padding: 20px; /* Padding for spacing */
+      border-radius: 5px; /* Rounded corners */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <div class="child">Item 1</div>
+    <div class="child">Item 2</div>
+    <div class="child">Item 3</div>
+    <div class="child">Item 4</div>
+    <div class="child">Item 5</div>
+    <!-- Add more child divs as needed -->
+  </div>
+
+</body>
+</html>
